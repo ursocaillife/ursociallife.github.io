@@ -1,33 +1,14 @@
-<!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
+<html><head>
 		<title>HAHALOSAH!</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="assets/css/main.css">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-			#myHeader {
-			position: absolute;
-					top: 0;
-					height: 100px;
-					width: 100px;
-					z-index: 1;
-					left: 0px;
-			}
 body {
   font-family: "Lato", sans-serif;
 }
-			.openbtn span {
-			display: flex;
-    align-items: center;
-    justify-content: center;
-			}
+
 .sidebar {
   height: 100%;
   width: 0;
@@ -70,9 +51,6 @@ body {
   padding: 10px 15px;
   border: none;
   transition: 0.5s;
-	display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .openbtn:hover {
@@ -91,25 +69,22 @@ body {
 }
 </style>
 	</head>
-	<body class="is-preload">
-		<div class="header" id="myHeader" style="z-index: 10">
-					<button class="openbtn" onclick="openNav()"><span>☰</span></button>  
+	<body class="">
+		<div class="header" id="myHeader">
+  			<button class="openbtn" onclick="openNav()">☰</button>  
 		</div>
-		<div id="mySidebar" class="sidebar" style="z-index: 10">
-			<a class="closebtn" onclick="closeNav()">×</a>
-			<!--
+		<div id="mySidebar" class="sidebar">
+  			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
   			<a href="#">About</a>
   			<a href="#">Services</a>
   			<a href="#">Clients</a>
   			<a href="#">Contact</a>
-			-->
-			<a href="https://hahalosah.github.io">Main Page</a>
 		</div>
 		<!-- Wrapper -->
 			<div id="wrapper">
-				
+
 				<!-- Header -->
-					<header id="header">
+					<header id="header" style="">
 						<div class="logo">
 							<span class="icon fa-gem"></span>
 						</div>
@@ -119,11 +94,11 @@ body {
 								<p>HAHALOSAH's Main Page</p>
 							</div>
 						</div>
-						<nav>
+						<nav class="use-middle">
 							<ul>
 								<li><a href="#intro">Intro</a></li>
 								<li><a href="#work">Work</a></li>
-								<li><a href="#about">About</a></li>
+								<li class="is-middle"><a href="#about">About</a></li>
 								<li><a href="#contact">Contact</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
@@ -131,32 +106,32 @@ body {
 					</header>
 
 				<!-- Main -->
-					<div id="main">
+					<div id="main" style="margin-left: 0px;">
 
 						<!-- Intro -->
-							<article id="intro">
+							<article id="intro" style="display: none;">
 								<h2 class="major">Intro</h2>
-								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
+								<span class="image main"><img src="images/pic01.jpg" alt=""></span>
 								<p>Hi everyone! I'm the president of the club <a href="https://gaming-club.fandom.com/wiki">GAMING CLUB</a>, and the main programmer at the CFDA.</p>
-							</article>
+							<div class="close">Close</div></article>
 
 						<!-- Work -->
-							<article id="work">
+							<article id="work" style="display: none;">
 								<h2 class="major">Work</h2>
-								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
+								<span class="image main"><img src="images/pic02.jpg" alt=""></span>
 								<p>HAHALOSAH's main coding page and other pages are located at <a href="https://justin226.github.io">https://justin226.github.io</a></p>
-							</article>
+							<div class="close">Close</div></article>
 
 						<!-- About -->
-							<article id="about">
+							<article id="about" style="display: none;">
 								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
+								<span class="image main"><img src="images/pic03.jpg" alt=""></span>
 								<p>A gamer, good club member, and programmer, HAHALOSAH is happy to help you program and
 								contribute to all sorts of clubs!</p>
-							</article>
+							<div class="close">Close</div></article>
 
 						<!-- Contact -->
-							<article id="contact">
+							<article id="contact" class="active" style="display: none">
 								<h2 class="major">Contact</h2>
 								<!--
 								<form method="post" action="#">
@@ -197,10 +172,10 @@ body {
 									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
 									<li><a target="_blank" href="https://github.com/HAHALOSAH" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 								</ul>
-							</article>
+							<div class="close">Close</div></article>
 
 						<!-- Elements -->
-							<article id="elements">
+							<article id="elements" style="display: none;">
 								<h2 class="major">Elements</h2>
 
 								<section>
@@ -208,13 +183,13 @@ body {
 									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
 									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
 									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-									<hr />
+									<hr>
 									<h2>Heading Level 2</h2>
 									<h3>Heading Level 3</h3>
 									<h4>Heading Level 4</h4>
 									<h5>Heading Level 5</h5>
 									<h6>Heading Level 6</h6>
-									<hr />
+									<hr>
 									<h4>Blockquote</h4>
 									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
 									<h4>Preformatted</h4>
@@ -395,11 +370,11 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 										<div class="fields">
 											<div class="field half">
 												<label for="demo-name">Name</label>
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe">
 											</div>
 											<div class="field half">
 												<label for="demo-email">Email</label>
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld">
 											</div>
 											<div class="field">
 												<label for="demo-category">Category</label>
@@ -412,7 +387,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 												</select>
 											</div>
 											<div class="field half">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked="">
 												<label for="demo-priority-low">Low</label>
 											</div>
 											<div class="field half">
@@ -424,7 +399,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 												<label for="demo-copy">Email me a copy</label>
 											</div>
 											<div class="field half">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<input type="checkbox" id="demo-human" name="demo-human" checked="">
 												<label for="demo-human">Not a robot</label>
 											</div>
 											<div class="field">
@@ -433,20 +408,20 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 											</div>
 										</div>
 										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
+											<li><input type="submit" value="Send Message" class="primary"></li>
+											<li><input type="reset" value="Reset"></li>
 										</ul>
 									</form>
 								</section>
 
-							</article>
+							<div class="close">Close</div></article>
 
 					</div>
 
-				<!-- Footer --><!--
-					<footer id="footer">
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>-->
+				<!-- Footer -->
+					<footer id="footer" style="display: none;">
+						<p class="copyright">© Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
 
 			</div>
 
@@ -471,5 +446,6 @@ function closeNav() {
 }		
 		</script>
 
-	</body>
-</html>
+	
+
+</body></html>

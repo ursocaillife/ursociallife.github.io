@@ -12,6 +12,14 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
+			.myHeader {
+			position: absolute;
+					top: 0;
+					height: 100px;
+					width: 100px;
+					z-index: 1;
+					left: 0px;
+			}
 body {
   font-family: "Lato", sans-serif;
 }
@@ -87,22 +95,18 @@ body {
 		
 		<!-- Wrapper -->
 			<div id="wrapper">
-				<div class="header" id="myHeader" style="
-					position: absolute;
-					top: 0;
-					height: 100px;
-					width: 100px;
-					z-index: 1;
-					left: 0px;
-				     ">
+				<div class="header" id="myHeader">
 					<button class="openbtn" onclick="openNav()"><span>☰</span></button>  
 		</div>
 		<div id="mySidebar" class="sidebar">
-  			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  			<a href="" class="closebtn" onclick="closeNav()">×</a>
+			<!--
   			<a href="#">About</a>
   			<a href="#">Services</a>
   			<a href="#">Clients</a>
   			<a href="#">Contact</a>
+			-->
+			<a href="https://hahalosah.github.io">Main Page</a>
 		</div>
 				<!-- Header -->
 					<header id="header">

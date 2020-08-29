@@ -15,7 +15,11 @@
 body {
   font-family: "Lato", sans-serif;
 }
-
+			.openbtn span {
+			display: flex;
+    align-items: center;
+    justify-content: center;
+			}
 .sidebar {
   height: 100%;
   width: 0;
@@ -58,6 +62,9 @@ body {
   padding: 10px 15px;
   border: none;
   transition: 0.5s;
+	display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .openbtn:hover {
@@ -77,8 +84,11 @@ body {
 </style>
 	</head>
 	<body class="is-preload">
-		<div class="header" id="myHeader">
-  			<button class="openbtn" onclick="openNav()">☰</button>  
+		
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<div class="header" id="myHeader">
+					<button class="openbtn" onclick="openNav()"><span>☰</span></button>  
 		</div>
 		<div id="mySidebar" class="sidebar">
   			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
@@ -87,9 +97,6 @@ body {
   			<a href="#">Clients</a>
   			<a href="#">Contact</a>
 		</div>
-		<!-- Wrapper -->
-			<div id="wrapper">
-
 				<!-- Header -->
 					<header id="header">
 						<div class="logo">

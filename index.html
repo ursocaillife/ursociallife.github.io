@@ -8,7 +8,11 @@
 body {
   font-family: "Lato", sans-serif;
 }
-
+			.openbtn span {
+			display: flex;
+    align-items: center;
+    justify-content: center;
+			}
 .sidebar {
   height: 100%;
   width: 0;
@@ -51,6 +55,9 @@ body {
   padding: 10px 15px;
   border: none;
   transition: 0.5s;
+	display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .openbtn:hover {
@@ -70,21 +77,28 @@ body {
 </style>
 	</head>
 	<body class="">
-		<div class="header" id="myHeader">
-  			<button class="openbtn" onclick="openNav()">☰</button>  
+		
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<div class="header" id="myHeader" style="
+					position: absolute;
+					top: 0;
+					height: 100px;
+					width: 100px;
+					z-index: 1;
+					left: 0px;
+				     ">
+					<button class="openbtn" onclick="openNav()"><span>☰</span></button>  
 		</div>
-		<div id="mySidebar" class="sidebar">
+		<div id="mySidebar" class="sidebar" style="width: 0px;">
   			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
   			<a href="#">About</a>
   			<a href="#">Services</a>
   			<a href="#">Clients</a>
   			<a href="#">Contact</a>
 		</div>
-		<!-- Wrapper -->
-			<div id="wrapper">
-
 				<!-- Header -->
-					<header id="header" style="">
+					<header id="header">
 						<div class="logo">
 							<span class="icon fa-gem"></span>
 						</div>
@@ -106,7 +120,7 @@ body {
 					</header>
 
 				<!-- Main -->
-					<div id="main" style="margin-left: 0px;">
+					<div id="main" style="display: none; margin-left: 0px;">
 
 						<!-- Intro -->
 							<article id="intro" style="display: none;">
@@ -131,7 +145,7 @@ body {
 							<div class="close">Close</div></article>
 
 						<!-- Contact -->
-							<article id="contact" class="active" style="display: none">
+							<article id="contact" style="display: none;">
 								<h2 class="major">Contact</h2>
 								<!--
 								<form method="post" action="#">
@@ -419,7 +433,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					</div>
 
 				<!-- Footer -->
-					<footer id="footer" style="display: none;">
+					<footer id="footer">
 						<p class="copyright">© Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 					</footer>
 
